@@ -1,0 +1,37 @@
+GET http://localhost:3001/api/v1/scholarships
+
+###
+
+GET http://localhost:3001/api/v1/scholarships/1
+
+###
+
+GET http://localhost:3001/api/v1/scholarships/filter/?category=national
+
+###
+
+POST http://localhost:3001/api/v1/scholarships
+Content-Type: application/json
+
+{
+  "name": "beca4",
+  "percentage": 67,
+  "category": "national",
+  "requirements": ["this is incredible"]
+}
+
+###
+
+PUT http://localhost:3001/api/v1/scholarships/3
+Content-Type: application/json
+
+{
+  "name": "beca4 updated",
+  "percentage": 89,
+  "category": "national",
+  "requirements": ["this is incredible"]
+}
+
+###
+
+DELETE http://localhost:3001/api/v1/scholarships/1

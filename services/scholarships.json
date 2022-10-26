@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "beca1",
+    "percentage": 75,
+    "category": "national",
+    "requirements": ["I almost failed the landing but I survived"]
+  },
+  {
+    "id": 2,
+    "name": "beca2",
+    "percentage": 40,
+    "category": "international",
+    "requirements": ["Pretty scary flight, I'm glad I'm alive"]
+  }
+]
