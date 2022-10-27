@@ -35,3 +35,22 @@ Content-Type: application/json
 ###
 
 DELETE http://localhost:3001/api/v1/scholarships/1
+
+###
+
+GET http://localhost:3001/api/v1/scholarships-mysql
+
+###
+
+GET http://localhost:3001/api/v1/scholarships-mysql/2
+
+###
+
+POST http://localhost:3001/api/v1/scholarships-mysql
+Content-Type: application/json
+
+{
+  "name": "beca3",
+  "percentage": 78,
+  "category": "international"
+}

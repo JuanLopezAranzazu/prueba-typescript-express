@@ -9,7 +9,10 @@ app.get("/", (_req: Request, res: Response) => {
 });
 
 import scholarshipsRouter from "./routes/scholarships.router";
+import scholarshipMysqlRouter from "./routes/scholarship.mysql.router";
+
 app.use("/api/v1/scholarships", scholarshipsRouter);
+app.use("/api/v1/scholarships-mysql", scholarshipMysqlRouter);
 
 app.use((err: Error, _req: Request, _res: Response, next: NextFunction) => {
   console.log("logErrors");
