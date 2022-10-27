@@ -1,7 +1,10 @@
 import { Category } from "./enums";
 
-export interface Scholarship {
+export interface BasicScholarship {
   id: number;
+}
+
+export interface Scholarship extends BasicScholarship {
   name: string;
   percentage: number;
   category: Category;

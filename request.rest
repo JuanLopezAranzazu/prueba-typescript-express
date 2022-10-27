@@ -50,7 +50,41 @@ POST http://localhost:3001/api/v1/scholarships-mysql
 Content-Type: application/json
 
 {
-  "name": "beca3",
-  "percentage": 78,
-  "category": "international"
+  "name": "beca4",
+  "percentage": 95,
+  "category": "national"
+}
+
+###
+
+GET http://localhost:3001/api/v1/users-mysql
+
+###
+
+GET http://localhost:3001/api/v1/users-mysql/1
+
+###
+
+POST http://localhost:3001/api/v1/users-mysql
+Content-Type: application/json
+
+{
+  "fullname": "user2",
+  "email": "user2@gmail.com",
+  "password": "root123",
+  "role": "user",
+  "scholarship": 3
+}
+
+###
+
+PUT http://localhost:3001/api/v1/users-mysql/2
+Content-Type: application/json
+
+{
+  "fullname": "user2 update name",
+  "email": "user2@gmail.com",
+  "password": "root123",
+  "role": "user",
+  "scholarship": 3
 }
