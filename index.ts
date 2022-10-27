@@ -1,5 +1,7 @@
 import express, { NextFunction, Request, Response } from "express";
 const app = express();
+import dotenv from "dotenv";
+dotenv.config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -30,5 +32,5 @@ app.use((err: Error, _req: Request, res: Response, _next: NextFunction) => {
   });
 });
 
-const port = 3001;
+const port = process.env.PORT;
 app.listen(port, () => console.log(`Server running in port ${port}`));
